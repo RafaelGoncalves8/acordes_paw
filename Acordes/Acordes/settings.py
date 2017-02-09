@@ -74,10 +74,17 @@ WSGI_APPLICATION = 'Acordes.wsgi.application'
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+     'default': {
+         'ENGINE': 'django.db.backends.sqlite3',
+         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+       }
+#    'default': {
+#        'ENGINE': 'django.db.backends.mysql',
+#        'NAME': 'acordes$acordes-db',
+#        'USER': 'acordes',
+#        'PASSWORD': 'qweQWE123!@#',
+#        'HOST': 'acordes.mysql.pythonanywhere-services.com',
+#    }
 }
 
 
@@ -103,9 +110,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 
